@@ -1,0 +1,14 @@
+---
+name: 'CNCF Prow Action Runner'
+description: 'Alows usage of Prow Plugins as GH Actions'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
